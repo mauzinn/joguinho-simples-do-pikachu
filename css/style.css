@@ -1,0 +1,134 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main{
+    border: 1px solid black;
+    border-bottom: 8px solid rgb(4, 173, 4);
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    background-image: linear-gradient(cyan, white);
+    position: relative;
+}
+
+.main img{
+    position: absolute;
+    bottom: 0;
+}
+
+.arvore{
+    animation: none;
+    left: 680px;
+    z-index: 1;
+}
+
+#pokemon{
+    z-index: 2;
+}
+
+.nuvens{
+    z-index: 0;
+    top: -20px;
+    animation: nuvens 28s infinite linear;
+}
+
+.footer{
+    margin: 10px;
+}
+
+.footer div{
+    display: inline-flex;
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gitHub{
+    position: absolute;
+    cursor: pointer;
+}
+
+#gitHub:hover{
+    zoom: 1.1;
+}
+
+@keyframes arvores {
+    from {
+        
+    }
+
+    to {
+        left: -180px;
+    }
+}
+
+@keyframes pikachu-mudando {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 520px;
+    }
+}
+
+@keyframes pikachu-mudando-reverse {
+    from {
+        left: 520px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes arvores-reverse {
+    from {
+        left: -180px;
+    }
+
+    to {
+        left: 780px;
+    }
+}
+
+
+@keyframes nuvens {
+    from {
+        left: 900px;
+    }
+
+    to {
+        left: -300px;
+    }
+}
+
+@keyframes pulo {
+    0% {
+        bottom: 0;
+    }
+
+    30% {
+        bottom: 60px;
+    }
+
+    40% {
+        bottom: 100px;
+    }
+
+    50% {
+        bottom: 100px;
+    }
+
+    60% {
+        bottom: 100px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
